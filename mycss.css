@@ -1,0 +1,19 @@
+.container-fluid{
+	margin-top:10px;
+}
+.date{
+	font-weight: bold;
+}
+.temperature{
+	font-size:5em;
+}
+#B{
+
+	position: relative;
+	left: 520px;
+	border: 3px solid silver;
+}
+footer > p  {
+	color:black;
+	margin-left: 530px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="mycss.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-6">
+        <!-- Large button group -->
+        <div class="btn-group">
+          <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+            Taipei <span class="caret"></span>
+          </button>
+          <ul id="dropdown" class="dropdown-menu" role="menu">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id='臺北市'>臺北市</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id='新北市'>新北市</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id='台中市' >台中市</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id='臺南市' >臺南市</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id='高雄市'>高雄市</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id='基隆市'>基隆市</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id='桃園市'>桃園市</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id='新竹市'>新竹市</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id='新竹縣'>新竹縣</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id='苗栗縣'>苗栗縣</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id='彰化縣'>彰化縣</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id='南投縣'>南投縣</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id='雲林縣'>雲林縣</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id='嘉義市'>嘉義市</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id='嘉義縣'>嘉義縣</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id='屏東縣'>屏東縣</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id='宜蘭縣'>宜蘭縣</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id='花蓮縣'>花蓮縣</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id='台東縣'>台東縣</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id='澎湖縣'>澎湖縣</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id='金門縣'>金門縣</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" id='連江縣'>連江縣</a></li>
+
+          </ul>
+        </div>
+        <div><span class="temperature">23</span> &#8451;</div>
+
+
+        <img>
+      </div>
+      <div class="col-xs-6">
+        <canvas id="today" width="100" height="100"></canvas>
+        <div class="condition">
+          <span class="date">4 May 2015: Mostly Cloudy</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="panel panel-default">
+          <!-- Default panel contents -->
+          <div class="panel-heading">Forecast</div>
+
+          <!-- Table -->
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="t1">5 May 2015</th>
+                <th class="t2">6 May 2015</th>
+                <th class="t3">7 May 2015</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="d1">17-23 &#8451;</td>
+                <td class="d2">18-26 &#8451;</td>
+                <td class="d3">15-24 &#8451;</td>
+              </tr>
+              <tr>
+                <td><canvas id="day1" width="64" height="64">Clear</canvas></td>
+                <td><canvas id="day2" width="64" height="64">Mostly Sunny</canvas></td>
+                <td><canvas id="day3" width="64" height="64">Mostly Cloudy</canvas></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+<footer>
+  <hr/>
+  <p >© Proudly made by <strong> David Lee</strong>.</p>
+  <img id="B" src="img/B.JPG" height="130" >
+    
+</footer>
+
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+  <script src="https://darkskyapp.github.io/skycons/skycons.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="myapp.js"></script>
+</body>
+</html>
