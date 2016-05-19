@@ -266,7 +266,7 @@ $('#dropdown li').on('click', function(){
   '金門縣' : 'Kinmen',
   '連江縣' : 'Lianjiang'
 };
-alert($(this).text());
+//alert($(this).text());
 getcity = $(this).text();
 //
 var a = $(this).text();
